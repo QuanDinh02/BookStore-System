@@ -1,14 +1,14 @@
 # BookStore-System 
 
 ## Description:
-My project is about a simple boostore ecommerce website.
+My project is about a simple bookstore ecommerce website.
 
 ## Technologies I use:
 - React(JS), Redux.
 - NodeJS (ExpressJS, RestAPI).
-- MySQL
+- MySQL.
 
-## Code Clone:
+## Clone Code:
 ### 1: Clone this project
 ### 2: Clone 2 folders client, server seperately
 - Client: https://github.com/QuanDinh02/Bookstore-Client.git
