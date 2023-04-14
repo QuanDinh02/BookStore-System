@@ -1,0 +1,1003 @@
+$main-green-color: #06603A;
+$green-color-1   : #19ae70;
+$green-color-2   : rgb(214, 247, 211);
+$green-color-3   : #159862;
+$green-color-4   : rgb(240, 252, 239);
+$white-color     : white;
+$gray-color-1    : #555953;
+$gray-color-2    : #d4d4d4;
+$gray-color-3    : #F9F9F9;
+$light-blue-color: #F8F9FD;
+$main-red-color  : #CA2027;
+$red-color       : red;
+$yellow-color-1  : rgb(206, 206, 3);
+$blue-color-1    : #0346AE;
+$processing-color: orange;
+
+.manager-container {
+    height: auto;
+
+    .manager-sidebar {
+        overflow   : auto;
+        flex-shrink: 0;
+        height     : 100vh;
+    }
+
+    .manager-content {
+        background-color: $light-blue-color;
+        flex-shrink     : 1;
+        width           : 100%;
+        height          : 100vh;
+        overflow-y      : auto;
+
+        .pagination-container {
+            .page-active-background {
+                background-color: $green-color-1 !important;
+                color           : $white-color !important;
+            }
+
+            .pre-next {
+                color: $main-green-color;
+            }
+
+            .page-background {
+                color           : black;
+                background-color: $gray-color-3;
+            }
+        }
+
+        .book-category-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .book-category-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .book-category-list-bottom {
+
+                .book-category-list {
+
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tr {
+                        td {
+                            vertical-align: middle;
+
+                            &:first-child {
+                                width: 15%;
+                            }
+                        }
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+                    .actions {
+                        width: 15%;
+                    }
+
+                    .edit-btn {
+                        border-radius   : 3px;
+                        background-color: orange;
+                        color           : $white-color;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $yellow-color-1;
+                        }
+                    }
+
+                    .delete-btn {
+                        border-radius   : 3px;
+                        background-color: red;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $main-red-color;
+                        }
+                    }
+
+                    .filter-icon {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .authors-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .authors-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .authors-list-bottom {
+                .authors-list {
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tr {
+                        td {
+                            vertical-align: middle;
+
+                            &:first-child {
+                                width: 15%;
+                            }
+                        }
+                    }
+
+                    .author-img {
+                        img {
+                            width         : 3.125rem;
+                            height        : 3.125rem;
+                            border-radius : 0.3125rem;
+                            vertical-align: middle;
+                            display       : inline-block;
+                        }
+                    }
+
+                    .description {
+                        width: 40%;
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+                    .actions {
+                        width: 15%;
+                    }
+
+                    .edit-btn {
+                        border-radius   : 3px;
+                        background-color: orange;
+                        color           : $white-color;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $yellow-color-1;
+                        }
+                    }
+
+                    .delete-btn {
+                        border-radius   : 3px;
+                        background-color: red;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $main-red-color;
+                        }
+                    }
+
+                    .filter-icon {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .books-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .books-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .books-list-bottom {
+                .select-search-box {
+                    .item-amount-select {
+                        width: 15%;
+                    }
+
+                    .select-box {
+                        width: 25%;
+                    }
+                }
+
+                .books-list {
+                    
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tr {
+                        td {
+                            vertical-align: middle;
+
+                            &:first-child {
+                                width: 5%;
+                            }
+                        }
+                    }
+
+                    .book-img {
+                        width: 8%;
+
+                        img {
+                            width         : 6.625rem;
+                            height        : 9.375rem;
+                            border-radius : 0.3125rem;
+                            vertical-align: middle;
+                            display       : inline-block;
+                        }
+                    }
+
+                    .book-name,
+                    .category,
+                    .author,
+                    .current_price,
+                    .price {
+                        width: 10%;
+                    }
+
+                    .book-description {
+                        width  : 27%;
+                        padding: 0 !important;
+
+                        .description-main {
+                            display           : -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            overflow          : hidden;
+                            text-overflow     : ellipsis;
+                        }
+
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+                    .actions {
+                        width: 10%;
+                    }
+
+                    .edit-btn {
+                        border-radius   : 3px;
+                        background-color: orange;
+                        color           : $white-color;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $yellow-color-1;
+                        }
+                    }
+
+                    .delete-btn {
+                        border-radius   : 3px;
+                        background-color: red;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $main-red-color;
+                        }
+                    }
+
+                    .update-btn {
+                        border-radius   : 3px;
+                        background-color: #0090D0;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: #303091;
+                        }
+                    }
+
+                    .filter-icon {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .publishers-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .publishers-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .publishers-list-bottom {
+                .publishers-list {
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tr {
+                        td {
+                            word-wrap     : break-word;
+                            vertical-align: middle;
+
+                            &:first-child {
+                                width: 15%;
+                            }
+                        }
+                    }
+
+                    .phone {
+                        width: 15%;
+                    }
+
+                    .publisher-description {
+                        width: 30%;
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+                    .publisher-name {
+                        width: 25%;
+                    }
+
+                    .actions {
+                        width: 15%;
+                    }
+
+                    .edit-btn {
+                        border-radius   : 3px;
+                        background-color: orange;
+                        color           : $white-color;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $yellow-color-1;
+                        }
+                    }
+
+                    .delete-btn {
+                        border-radius   : 3px;
+                        background-color: red;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $main-red-color;
+                        }
+                    }
+
+                    .filter-icon {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .users-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .users-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .users-list-bottom {
+                .users-list {
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tr {
+                        td {
+                            vertical-align: middle;
+
+                            &:first-child {
+                                width: 8%;
+                            }
+                        }
+                    }
+
+                    .user-img {
+                        width: 7%;
+
+                        img {
+                            width         : 3.125rem;
+                            height        : 3.125rem;
+                            border-radius : 0.3125rem;
+                            vertical-align: middle;
+                            display       : inline-block;
+                        }
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+                    .phone,
+                    .join-date,
+                    .gender,
+                    .user-group {
+                        width: 10%;
+                    }
+
+                    .username {
+                        width: 15%;
+                    }
+
+                    .email {
+                        width: 15%;
+                    }
+
+                    .actions {
+                        width: 15%;
+                    }
+
+                    .edit-btn {
+                        border-radius   : 3px;
+                        background-color: orange;
+                        color           : $white-color;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $yellow-color-1;
+                        }
+                    }
+
+                    .delete-btn {
+                        border-radius   : 3px;
+                        background-color: red;
+                        color           : $white-color;
+                        padding-bottom  : 2px;
+
+                        .icon {
+                            font-size: 1.125rem;
+                        }
+
+                        &:hover {
+                            cursor          : pointer;
+                            background-color: $main-red-color;
+                        }
+                    }
+
+                    .filter-icon {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-add-new-container {
+            margin          : 1.875rem;
+            background-color: $light-blue-color;
+
+            .content-title {
+                .table-title {
+                    font-size  : 1.3rem;
+                    font-weight: 600;
+                }
+
+                border-bottom: 1px solid $gray-color-2;
+            }
+
+            .left-content {
+                background-color: white;
+                box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+                flex-basis      : 25%;
+                height          : fit-content;
+
+                .main-content {
+                    .image {
+                        width : 150px;
+                        height: 150px;
+
+                        img {
+                            width        : 100%;
+                            height       : 100%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .image-upload {
+                        width    : fit-content;
+                        color    : $green-color-1;
+                        font-size: 1.125rem;
+
+                        &:hover {
+                            cursor: pointer;
+
+                            .fileUpload {
+                                cursor: pointer;
+                            }
+
+                            background-color: $green-color-4;
+                        }
+                    }
+
+                    .file-upload-allow {
+                        font-size: 0.95rem;
+                        color    : $gray-color-1;
+                    }
+                }
+            }
+
+            .right-content {
+                background-color: white;
+                box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+                flex-basis      : 70%;
+
+                .main-content {
+                    .user-info {
+                        border-bottom: 1px solid $gray-color-2;
+                    }
+
+                    .user-account-info {
+                        .section-title {
+                            font-size  : 1.2rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .orders-management-container {
+            margin          : 1.875rem;
+            background-color: white;
+            box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+            .orders-list-top {
+                border-bottom: 1px solid $gray-color-2;
+
+                .table-title {
+                    font-size  : 1.45rem;
+                    font-weight: 600;
+                    color      : $green-color-1;
+                }
+
+                button {
+                    background-color: $green-color-1;
+                    color           : $white-color;
+
+                    &:hover {
+                        background-color: $green-color-3;
+                    }
+                }
+            }
+
+            .orders-list-bottom {
+
+                .orders-list {
+                    table {
+                        table-layout: fixed;
+                        border      : 1px solid rgb(237, 237, 237);
+                    }
+
+                    thead {
+                        tr {
+                            background-color: $green-color-1;
+                            color           : white;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+
+                            &:hover {
+                                cursor          : pointer;
+                                background-color: rgb(245, 245, 245) !important;
+
+                                td {
+                                    color: $green-color-1;
+                                }
+                            }
+
+                            .address {
+                                padding: 0 !important;
+
+                                .address-content {
+                                    display           : -webkit-box;
+                                    -webkit-line-clamp: 3;
+                                    -webkit-box-orient: vertical;
+                                    overflow          : hidden;
+                                    text-overflow     : ellipsis;
+                                }
+                            }
+
+                            .processing-status {
+                                color: $processing-color;
+                            }
+
+                            .delivered-status {
+                                color: $blue-color-1;
+                            }
+
+                            .completed-status {
+                                color: $green-color-1;
+                            }
+
+                            .canceled-status {
+                                color: $red-color;
+                            }
+
+                            .edit-btn {
+                                border-radius   : 3px;
+                                background-color: orange;
+                                color           : $white-color;
+
+                                .icon {
+                                    font-size: 1.125rem;
+                                }
+
+                                &:hover {
+                                    cursor          : pointer;
+                                    background-color: $yellow-color-1;
+                                }
+                            }
+
+                            .delete-btn {
+                                border-radius   : 3px;
+                                background-color: red;
+                                color           : $white-color;
+                                padding-bottom  : 2px;
+
+                                .icon {
+                                    font-size: 1.125rem;
+                                }
+
+                                &:hover {
+                                    cursor          : pointer;
+                                    background-color: $main-red-color;
+                                }
+                            }
+
+                            .filter-icon {
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    tr {
+                        td {
+                            word-wrap     : break-word;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .table-head {
+                        font-weight: 600;
+                    }
+
+
+                }
+            }
+        }
+
+        .order-detail-container {
+            margin          : 1.875rem;
+            background-color: $light-blue-color;
+
+            .content-title {
+                .table-title {
+                    font-size  : 1.2rem;
+                    font-weight: 600;
+                }
+
+                border-bottom: 1px solid $gray-color-2;
+            }
+
+            .left-content {
+                background-color: white;
+                box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+                flex-basis      : 25%;
+                height          : fit-content;
+
+                .main-content {
+                    .order-status {
+                        border-radius: 1.25rem;
+                    }
+
+                    .processing-status {
+                        color : $processing-color;
+                        border: 1px solid $processing-color;
+                    }
+
+                    .delivered-status {
+                        color : $blue-color-1;
+                        border: 1px solid $blue-color-1;
+                    }
+
+                    .completed-status {
+                        color : $green-color-1;
+                        border: 1px solid $green-color-1;
+                    }
+
+                    .canceled-status {
+                        color : $red-color;
+                        border: 1px solid $red-color;
+                    }
+                }
+            }
+
+            .right-content {
+                flex-basis: 70%;
+
+                .order-main {
+                    background-color: white;
+                    box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+                    .order-id {
+                        color: $green-color-1;
+                    }
+
+                    .order-date {
+                        font-size  : 0.95rem;
+                        font-weight: 400;
+                    }
+
+                    .main-content {
+                        .order-items {
+                            table {
+                                tr {
+                                    td {
+                                        width  : 14%;
+                                        padding: 0 0 1.5rem 0;
+
+                                        vertical-align: middle;
+
+                                        &:first-child {
+                                            width: 58%;
+                                        }
+
+
+                                    }
+                                }
+
+                                .order-item-info {
+                                    .image {
+                                        width : 3.75rem;
+                                        height: 5.625rem;
+
+                                        border: 1px solid $gray-color-2;
+
+                                        img {
+                                            width : 100%;
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    .name {
+                                        width: 60%;
+
+                                        .book-name {
+                                            font-weight: 600;
+
+                                            display           : -webkit-box;
+                                            -webkit-line-clamp: 1;
+                                            -webkit-box-orient: vertical;
+                                            overflow          : hidden;
+                                            text-overflow     : ellipsis;
+                                        }
+
+                                    }
+                                }
+
+                                .price-calc {
+
+                                    .price,
+                                    .amount {
+                                        font-weight: 600;
+                                    }
+                                }
+
+                                .total {
+                                    font-weight: 600;
+                                }
+
+                                .delete-order-item-icon {
+                                    &:hover {
+                                        cursor: pointer;
+                                        color : $red-color;
+                                    }
+                                }
+                            }
+
+                            border-bottom: 1px solid $gray-color-2;
+                        }
+
+                        .order-total-payment {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .customer-contact {
+                    background-color: white;
+                    box-shadow      : 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+                    .customer-info {
+                        table {
+                            tr {
+                                td {
+                                    width: 50%;
+                                }
+                            }
+
+                            .customer-icon {
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.red {
+    border: 1px dashed red;
+}
+
+.blue {
+    border: 1px dashed blue;
+}
+
+.green {
+    border: 1px dashed green;
+}

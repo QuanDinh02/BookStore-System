@@ -1,0 +1,431 @@
+$main-green-color: #06603A;
+$green-color-1   : #19ae70;
+$light-blue-color: #F8F9FD;
+$main-red-color  : #CA2027;
+$red-color       : red;
+$bg-color        : #F5F5F5;
+$blue-color-1    : #0346AE;
+$gray-color-1    : #555953;
+$gray-color-2    : #d4d4d4;
+$gray-color-3    : #F9F9F9;
+$gray-color-4    : #ededed;
+$processing-color: orange;
+
+.user-profile-containter {
+
+    background-color: $bg-color;
+    min-height      : calc(100vh - 12.0625rem);
+
+    .user-profile-detail {
+
+        padding: 0 4rem;
+
+        .profile-sidebar {
+            .sidebar-item {
+
+                padding-bottom: 0.5rem;
+
+                .user-account-section {
+                    .user-icon {
+                        font-size: 24px;
+                        color    : $blue-color-1;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        color : $main-red-color;
+                    }
+                }
+
+                .user-purchase-section {
+                    .purchase-icon {
+                        font-size: 24px;
+                        color    : $blue-color-1;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        color : $main-red-color;
+                    }
+
+                    .active-section {
+                        color: $main-red-color;
+                    }
+                }
+
+                .active-section {
+                    color: $main-red-color;
+                }
+            }
+
+            .account-selection {
+                ul {
+
+                    li {
+                        padding-left: 0.3125rem;
+                        list-style  : none;
+                        color       : $gray-color-1;
+
+                        &:hover {
+                            cursor: pointer;
+                            color : $main-red-color;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .profile-content {
+            background-color: white;
+            padding         : 1rem 1.875rem;
+            box-shadow      : 0 1px 2px 0 rgba(0, 0, 0, .13);
+
+            .user-account-container {
+                .account-header {
+                    .account-title {
+                        font-size: 1.125rem;
+                    }
+
+                    .attention {
+                        font-size: 0.95rem;
+                    }
+
+                    padding-bottom: 1rem;
+                    border-bottom : 1px solid $gray-color-2;
+                }
+
+                .account-content {
+                    .account-information {
+                        padding-left : 2rem;
+                        padding-right: 2.5rem;
+                        border-right : 1px solid $gray-color-4;
+
+                        .item {
+                            margin-bottom: 1.875rem;
+
+                            .main-label {
+                                font-size: 0.95rem;
+                                color    : $gray-color-1;
+                            }
+
+                            .hidden-text {
+                                color: white;
+                            }
+                        }
+
+                        .form-control:disabled {
+                            cursor: not-allowed !important;
+                        }
+                    }
+
+                    .account-image {
+                        padding: 2rem 3rem;
+
+                        .image {
+                            width : 100px;
+                            height: 100px;
+
+                            img {
+                                width        : 100%;
+                                height       : 100%;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .img-hint {
+                            font-size: 0.95rem;
+                            color    : $gray-color-1;
+                        }
+
+                        .upload-img-btn {
+                            width    : fit-content;
+                            padding  : 0.3125rem 0.625rem 0.0625rem 0.625rem;
+                            font-size: 0.95rem;
+                            border   : 1px solid $gray-color-2;
+
+                            &:hover {
+                                cursor          : pointer;
+                                background-color: $gray-color-3;
+
+                                .file_upload {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .user-address-container {
+                min-height: calc(100vh - 19rem);
+
+                .address-header {
+                    .address-title {
+                        font-size: 1.125rem;
+                    }
+
+                    .plus-icon {
+                        font-size: 1.25rem;
+                    }
+
+                    padding-bottom: 1rem;
+                    border-bottom : 1px solid $gray-color-2;
+                }
+
+                .address-main {
+                    .address-item {
+                        .address-info {
+
+                            .phone,
+                            .address {
+                                font-size: 0.9rem;
+                                color    : $gray-color-1;
+                            }
+
+                            .address-content {
+                                .default-label {
+
+                                    width    : fit-content;
+                                    font-size: 0.9rem;
+                                    padding  : 0 0.3125rem;
+
+                                    color : $red-color;
+                                    border: 1px solid $red-color;
+                                }
+                            }
+                        }
+
+                        .address-actions {
+
+                            .edit-icon,
+                            .delete-icon {
+                                font-size: 1.4rem;
+                                color    : white;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .edit-icon {
+                                padding         : 2px;
+                                background-color: orange;
+
+                                &:hover {
+                                    background-color: rgb(210, 138, 6);
+                                }
+                            }
+
+                            .delete-icon {
+                                background-color: $red-color;
+                                padding         : 2px;
+
+                                &:hover {
+                                    background-color: $main-red-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .password-account-container {
+                .password-header {
+                    .password-title {
+                        font-size: 1.125rem;
+                    }
+
+                    .attention {
+                        font-size: 0.95rem;
+                    }
+
+                    padding-bottom: 1rem;
+                    border-bottom : 1px solid $gray-color-2;
+                }
+
+                .password-content {
+                    .password-wrapper {
+                        width: 70%;
+
+                        margin: 0 auto;
+
+                        .item {
+                            margin-bottom: 1.5rem;
+
+                            .main-label {
+                                font-size: 0.95rem;
+                                color    : $gray-color-1;
+                            }
+
+                            .hidden-text {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .user-purchase-container {
+                min-height: calc(100vh - 19rem);
+
+                .purchase-navigation {
+                    border-bottom: 1px solid $gray-color-4;
+
+                    .tab {
+                        width         : 20%;
+                        text-align    : center;
+                        padding-top   : 1rem;
+                        padding-bottom: 1.2rem;
+
+                        border-bottom: 3px solid white;
+
+                        .navigation-link {
+                            text-decoration: none;
+                            color          : black;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+
+                            .navigation-link {
+                                color: $green-color-1;
+                            }
+                        }
+                    }
+
+                    .active-navigation-link {
+                        cursor             : pointer;
+                        border-bottom-color: $green-color-1;
+
+                        .navigation-link {
+                            color: $green-color-1;
+                        }
+                    }
+                }
+
+                .user-purchase-detail {
+                    .order-container {
+                        border       : 1px solid $gray-color-2;
+                        margin-bottom: 3.125rem;
+
+                        .order-info {
+                            .order-id-time {
+                                .order-id {
+                                    font-size  : 1.25rem;
+                                    font-weight: 600;
+
+                                    .code {
+                                        color: $green-color-1;
+                                    }
+                                }
+
+                                .order-time {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .processing-status {
+                                color  : $processing-color;
+                                border : 1px solid $processing-color;
+                                padding: 0 0.625rem;
+                            }
+
+                            .delivered-status {
+                                color  : $blue-color-1;
+                                border : 1px solid $blue-color-1;
+                                padding: 0 0.625rem;
+                            }
+
+                            .completed-status {
+                                color  : $green-color-1;
+                                border : 1px solid $green-color-1;
+                                padding: 0 0.625rem;
+                            }
+
+                            .canceled-status {
+                                color  : $red-color;
+                                border : 1px solid $red-color;
+                                padding: 0 0.625rem;
+                            }
+                        }
+
+                        .order-detail {
+                            .order-item {
+                                border-top: 1px solid $gray-color-2;
+
+                                .left {
+                                    width: 80%;
+
+                                    .image {
+                                        width : 5.625rem;
+                                        height: 8.4375rem;
+
+                                        img {
+                                            width : 100%;
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    .name {
+                                        font-size: 1.1rem;
+                                    }
+
+                                    .quantity {
+                                        font-size: 0.9rem;
+                                        color    : $gray-color-1;
+                                    }
+                                }
+
+                                .right {
+                                    width      : 20%;
+                                    border-left: 1px solid $gray-color-2;
+
+                                    .price {
+                                        font-size: 1.125rem;
+                                    }
+                                }
+                            }
+
+                            .order-payment {
+                                border-top: 1px solid $gray-color-2;
+
+                                .total-payments {
+                                    .total-price {
+                                        font-size: 24px;
+                                        color    : $red-color;
+                                    }
+                                }
+
+                                .order-delete-btn {
+                                    border          : 1px solid $gray-color-2;
+                                    background-color: white;
+
+                                    padding: 0.25rem 1.5rem;
+
+                                    &:hover {
+                                        color       : $red-color;
+                                        border-color: $red-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.red {
+    border: 1px dashed red;
+}
+
+.blue {
+    border: 1px dashed blue;
+}
+
+.green {
+    border: 1px dashed green;
+}

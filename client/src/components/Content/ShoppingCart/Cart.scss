@@ -1,0 +1,182 @@
+$red-color        : #F03737;
+$main-red-color   : #CA2027;
+$main-green-color : #087B44;
+$cart-bg-color    : #F5F5F5;
+
+.shopping-cart-container {
+
+    .cart-title {
+        font-size  : 1.25rem;
+        font-weight: 600;
+        color      : $main-green-color;
+    }
+
+    .cart-detail-container {
+        min-height: calc(100vh - 17rem);
+
+        background-color: $cart-bg-color;
+        padding-bottom  : 5rem;
+
+        .cart-detail {
+            padding: 0 4rem;
+
+            .cart-main {
+                font-size: 0.875rem;
+
+                table {
+                    background-color: white;
+                    border-radius   : 0.25rem;
+
+                    .table-header,
+                    .product-info {
+                        width: 15%;
+                    }
+
+                    .table-header-x4 {
+                        width: 60%;
+
+                        .remove-all-icon {
+                            .icon {
+                                font-size: 1.2rem;
+
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                                color : $red-color;
+                            }
+                        }
+
+                    }
+                }
+
+                .checkbox-all,
+                .checkbox-product {
+                    width: 40%;
+                }
+
+                .product-table {
+                    tr {
+                        height: 7.1875rem;
+
+                        .total-price {
+                            color: $main-red-color;
+                        }
+
+                        .remove-icon {
+                            font-size: 1.375rem;
+
+                            .icon {
+                                &:hover {
+                                    cursor: pointer;
+                                    color : $red-color;
+                                }
+                            }
+                        }
+                    }
+
+                    .quantity {
+                        input {
+                            font-size : 1.2rem;
+                            width     : 3.125rem;
+                            text-align: center;
+                            border    : 1px solid rgb(226, 226, 226);
+                        }
+
+                        button {
+                            font-size       : 1.2rem;
+                            background-color: white;
+                            padding         : 0.08rem 0.5rem;
+                            border          : 1px solid rgb(226, 226, 226);
+                        }
+                    }
+
+                    .product-info {
+
+                        .product-image {
+                            img {
+                                width : 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .product-title {
+                            padding: 0 !important;
+
+                            .title-content {
+                                display           : -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow          : hidden;
+                                text-overflow     : ellipsis;
+                            }
+
+                        }
+                    }
+                }
+
+                .checkbox-form {
+                    font-size: 1.125rem;
+                }
+
+                .select-all-section {
+                    position: sticky;
+                    bottom  : 0;
+                }
+            }
+
+            .cart-payment {
+                height          : fit-content;
+                background-color: white;
+
+                padding  : 1rem 0.8rem;
+                font-size: 0.875rem;
+
+                .summary {
+                    font-size: 1.2rem;
+                }
+
+                .title-color {
+                    color: rgb(96, 96, 96);
+                }
+
+                .value {
+                    font-size: 1rem;
+
+                    .unit {
+                        text-decoration: underline;
+                    }
+                }
+
+                .saved {
+                    .value {
+                        color: $red-color;
+                    }
+                }
+
+                .total-amount {
+                    .value {
+                        font-size: 1.125rem;
+                        color    : $main-green-color;
+                    }
+                }
+
+                .confirm-cart {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart-confirm-modal {
+    font-size: 1.125rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
